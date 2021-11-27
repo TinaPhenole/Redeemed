@@ -12,15 +12,11 @@ export default function EditScreenInfo({ path }: { path: string }) {
           style={styles.getStartedText}
           lightColor="rgba(0,0,0,0.8)"
           darkColor="rgba(255,255,255,0.8)"
-        >
-          Welcome to my visuall story app!
-        </Text>
+        ></Text>
       </View>
 
       <View style={styles.helpContainer}>
-        <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
-          Feel free to navigate around or continue to the story.
-        </Text>
+        <Text style={styles.helpLinkText} lightColor={Colors.light.tint}></Text>
       </View>
     </View>
   );

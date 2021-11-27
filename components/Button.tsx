@@ -1,7 +1,5 @@
 import React, { FC } from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-
-import Colors from "../constants/Colors";
 import { Text } from "./Themed";
 
 interface Props {
