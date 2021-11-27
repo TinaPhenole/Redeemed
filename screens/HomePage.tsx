@@ -33,7 +33,6 @@ export default function HomePage({
         navigation tab you can go directly to the storys page where you can
         select the story you wish you read.{" "}
       </Text>
-      <EditScreenInfo path="/screens/HomePage.tsx" />
     </View>
   );
 }
