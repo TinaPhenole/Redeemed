@@ -13,7 +13,7 @@ import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import NotFoundScreen from "../screens/NotFoundScreen";
 import HomePage from "../screens/HomePage";
-import TabTwoScreen from "../screens/TabTwoScreen";
+import StoryPage from "../screens/StoryPage";
 import {
   RootStackParamList,
   RootTabParamList,
@@ -80,10 +80,10 @@ function BottomTabNavigator() {
         })}
       />
       <BottomTab.Screen
-        name="TabTwo"
-        component={TabTwoScreen}
+        name="StoryPage"
+        component={StoryPage}
         options={{
-          title: "Tab Two",
+          title: "Stories",
           tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
         }}
       />
@@ -91,9 +91,6 @@ function BottomTabNavigator() {
   );
 }
 
-/**
- * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
- */
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>["name"];
   color: string;

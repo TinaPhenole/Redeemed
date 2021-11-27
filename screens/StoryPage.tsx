@@ -1,29 +1,32 @@
-import { StatusBar } from "expo-status-bar";
 import * as React from "react";
-import { Platform, StyleSheet } from "react-native";
-import Button from "../components/Button";
-
-import EditScreenInfo from "../components/EditScreenInfo";
+import { StyleSheet } from "react-native";
 import { Text, View } from "../components/Themed";
-import Navigation from "../navigation";
+import Button from "../components/Button";
 import { RootStackScreenProps } from "../types";
 
 type Props = RootStackScreenProps<"Modal">;
 
-export default function ModalScreen({ navigation }: Props) {
+export default function StoryPage({ navigation }: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Modal</Text>
+      <Text style={styles.title}>Stories</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
         darkColor="rgba(255,255,255,0.1)"
       />
-      <EditScreenInfo path="/screens/ModalScreen.tsx" />
-
-      {/* Use a light status bar on iOS to account for the black space above the modal */}
-      <StatusBar style={Platform.OS === "ios" ? "light" : "auto"} />
-      <Button title="test" onPress={() => navigation.goBack} />
+      <Button
+        title="Chapter 1"
+        onPress={() => navigation.navigate("NotFound")}
+      />
+      <Button
+        title="Chapter 2"
+        onPress={() => navigation.navigate("NotFound")}
+      />
+      <Button
+        title="Chapter 3"
+        onPress={() => navigation.navigate("NotFound")}
+      />
     </View>
   );
 }
