@@ -23,6 +23,16 @@ export default function HomePage({
       >
         Welcome to my visuall story app!{" "}
       </Text>
+
+      <Text
+        style={styles.content}
+        lightColor="rgba(0,0,0,0.8)"
+        darkColor="rgba(255,255,255,0.8)"
+      >
+        This app contains a short story about my life. Down in the bottom
+        navigation tab you can go directly to the storys page where you can
+        select the story you wish you read.{" "}
+      </Text>
       <EditScreenInfo path="/screens/HomePage.tsx" />
     </View>
   );
@@ -44,8 +54,14 @@ const styles = StyleSheet.create({
     width: "80%",
   },
   spreadText: {
-    fontSize: 17,
+    fontSize: 18,
     lineHeight: 24,
+    textAlign: "center",
+  },
+  content: {
+    marginTop: 20,
+    marginHorizontal: 30,
+    fontSize: 15,
     textAlign: "center",
   },
 });
