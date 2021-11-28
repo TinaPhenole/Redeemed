@@ -22,8 +22,6 @@ export default function EditScreenInfo({ path }: { path: string }) {
   );
 }
 
-// ändra namnen på dessa
-
 const styles = StyleSheet.create({
   getStartedContainer: {
     alignItems: "center",
