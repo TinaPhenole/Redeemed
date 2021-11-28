@@ -9,33 +9,30 @@ type Props = RootStackScreenProps<"Chapter2p1">;
 export default function StoryPage({ navigation }: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Chapter 2</Text>
+      <Text style={styles.title}>Chapter 2, Part One</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
         darkColor="rgba(255,255,255,0.1)"
       />
       <ScrollView>
-        <Text style={styles.storyText}>C.2 Part 1</Text>
         <Text style={styles.storyText}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-          iure doloribus, hic, praesentium repudiandae sunt ipsum, dignissimos
-          rem deleniti enim dolorem! Unde asperiores dicta vero repellendus
-          autem, sequi culpa repellat. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Accusantium iure doloribus, hic, praesentium
-          repudiandae sunt ipsum, dignissimos rem deleniti enim dolorem! Unde
-          asperiores dicta vero repellendus autem, sequi culpa repellat. Lorem
-          ipsum dolor sit amet consectetur, adipisicing elit. Accusantium iure
-          doloribus, hic, praesentium repudiandae sunt ipsum, dignissimos rem
-          deleniti enim dolorem! Unde asperiores dicta vero repellendus autem,
-          sequi culpa repellat. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Accusantium iure doloribus, hic, praesentium
-          repudiandae sunt ipsum, dignissimos rem deleniti enim dolorem! Unde
-          asperiores dicta vero repellendus autem, sequi culpa repellat. Lorem
-          ipsum dolor sit amet consectetur, adipisicing elit. Accusantium iure
-          doloribus, hic, praesentium repudiandae sunt ipsum, dignissimos rem
-          deleniti enim dolorem! Unde asperiores dicta vero repellendus autem,
-          sequi culpa repellat.
+          The summer was finally over and she wiped her tears and went with her
+          head first into the continuation of the HTML course. The first task
+          went well, she followed along with the course and the classes. The
+          last assignment was a group assignment and she thought "Finally! Now I
+          get to know a little more people and I can prove that I belong here!
+          ". The group was enormously welded to begin with, and it was noticed
+          quite quickly that her knowledge was not the same as the other team
+          members. The work and time she put in to get code and features was
+          removed by the others, because "do we really need this?"
+        </Text>
+        <Text style={styles.storyText}>
+          All attempts to contribiute, ended up with negative feed back from the
+          others in the group. And the woman again felt stupid, and that she did
+          not contribute to anything. Not even her knowledge of PS would save
+          her this time. "What's the point of trying?" was a thought she often
+          went to bed with.
         </Text>
         <View style={styles.centerItems}>
           <Button

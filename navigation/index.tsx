@@ -7,7 +7,7 @@ import {
 } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
-import { ColorSchemeName, Pressable } from "react-native";
+import { ColorSchemeName } from "react-native";
 
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
@@ -20,9 +20,6 @@ import Chapter1p3 from "../screens/chapter1/chapter1p3";
 import Chapter2p1 from "../screens/chapter2/chapter2p1";
 import Chapter2p2 from "../screens/chapter2/chapter2p2";
 import Chapter2p3 from "../screens/chapter2/chapter2p3";
-import Chapter3p1 from "../screens/chapter3/chapter3p1";
-import Chapter3p2 from "../screens/chapter3/chapter3p2";
-import Chapter3p3 from "../screens/chapter3/chapter3p3";
 import {
   RootStackParamList,
   RootTabParamList,
@@ -94,42 +91,10 @@ function RootNavigator() {
           options={{ title: "Chapter 2" }}
         />
       </Stack.Group>
-      <Stack.Group screenOptions={{ presentation: "modal" }}>
-        <Stack.Screen
-          name="Chapter3p1"
-          component={Chapter3p1}
-          options={{ title: "Chapter 3" }}
-        />
-        <Stack.Screen
-          name="Chapter3p2"
-          component={Chapter3p2}
-          options={{ title: "Chapter 3" }}
-        />
-        <Stack.Screen
-          name="Chapter3p3"
-          component={Chapter3p3}
-          options={{ title: "Chapter 2" }}
-        />
-      </Stack.Group>
     </Stack.Navigator>
   );
 }
-/*function ChapterNavigator() {
-  return (
-    <Stack.Navigator>
-      <Stack.Chapters
-      name="Chapter1p1"
-      component={BottomTabNavigator}
-      options={{ headerShown: true }}
-    />
-    </Stack.Navigator>
-  )
-}*/
 
-/**
- * A bottom tab navigator displays tab buttons on the bottom of the display to switch screens.
- * https://reactnavigation.org/docs/bottom-tab-navigator
- */
 const BottomTab = createBottomTabNavigator<RootTabParamList>();
 
 function BottomTabNavigator() {
@@ -168,21 +133,3 @@ function TabBarIcon(props: {
 }) {
   return <FontAwesome size={30} style={{ marginBottom: -3 }} {...props} />;
 }
-
-/*
-headerRight: () => (
-            <Pressable
-              onPress={() => navigation.navigate("Modal")}
-              style={({ pressed }) => ({
-                opacity: pressed ? 0.5 : 1,
-              })}
-            >
-              <FontAwesome
-                name="info-circle"
-                size={25}
-                color={Colors[colorScheme].text}
-                style={{ marginRight: 15 }}
-              />
-            </Pressable>
-          ),
-*/

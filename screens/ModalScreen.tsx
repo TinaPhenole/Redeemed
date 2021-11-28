@@ -5,7 +5,6 @@ import Button from "../components/Button";
 
 import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
-import Navigation from "../navigation";
 import { RootStackScreenProps } from "../types";
 
 type Props = RootStackScreenProps<"Modal">;
@@ -21,7 +20,6 @@ export default function ModalScreen({ navigation }: Props) {
       />
       <EditScreenInfo path="/screens/ModalScreen.tsx" />
 
-      {/* Use a light status bar on iOS to account for the black space above the modal */}
       <StatusBar style={Platform.OS === "ios" ? "light" : "auto"} />
       <Button title="test" onPress={() => navigation.goBack} />
     </View>
