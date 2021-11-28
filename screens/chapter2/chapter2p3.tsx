@@ -17,7 +17,7 @@ export default function StoryPage({ navigation }: Props) {
       />
       <ScrollView>
         <Text style={styles.storyText}>C.2 Part 3</Text>
-        <Text style={styles.storyText}>End of Chapter 3</Text>
+        <Text style={styles.storyText}>End of Chapter 2</Text>
         <Button
           title="Continue"
           onPress={() => navigation.navigate("Chapter3p1")}

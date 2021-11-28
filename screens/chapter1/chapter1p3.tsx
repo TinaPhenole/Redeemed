@@ -50,6 +50,10 @@ const styles = StyleSheet.create({
     height: 1,
     width: "80%",
   },
+  centerItems: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
   storyText: {
     marginHorizontal: 30,
     fontSize: 16,

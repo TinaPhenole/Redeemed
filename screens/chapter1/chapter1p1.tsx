@@ -37,11 +37,17 @@ export default function StoryPage({ navigation }: Props) {
           deleniti enim dolorem! Unde asperiores dicta vero repellendus autem,
           sequi culpa repellat.
         </Text>
+        <View style={styles.centerItems}>
+          <Button
+            title="Continue"
+            onPress={() => navigation.navigate("Chapter1p2")}
+          />
+        </View>
       </ScrollView>
       <View style={styles.buttonContainer}>
         <Button
-          title="Continue"
-          onPress={() => navigation.navigate("Chapter1p2")}
+          title="Back to Chapter Selection"
+          onPress={() => navigation.navigate("StoryPage")}
         />
       </View>
     </View>
@@ -63,6 +69,10 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     height: 1,
     width: "80%",
+  },
+  centerItems: {
+    justifyContent: "center",
+    alignItems: "center",
   },
   storyText: {
     marginHorizontal: 30,

@@ -17,26 +17,7 @@ export default function StoryPage({ navigation }: Props) {
       />
       <ScrollView>
         <Text style={styles.storyText}>C.3 Part 3</Text>
-        <Text style={styles.storyText}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-          iure doloribus, hic, praesentium repudiandae sunt ipsum, dignissimos
-          rem deleniti enim dolorem! Unde asperiores dicta vero repellendus
-          autem, sequi culpa repellat. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Accusantium iure doloribus, hic, praesentium
-          repudiandae sunt ipsum, dignissimos rem deleniti enim dolorem! Unde
-          asperiores dicta vero repellendus autem, sequi culpa repellat. Lorem
-          ipsum dolor sit amet consectetur, adipisicing elit. Accusantium iure
-          doloribus, hic, praesentium repudiandae sunt ipsum, dignissimos rem
-          deleniti enim dolorem! Unde asperiores dicta vero repellendus autem,
-          sequi culpa repellat. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Accusantium iure doloribus, hic, praesentium
-          repudiandae sunt ipsum, dignissimos rem deleniti enim dolorem! Unde
-          asperiores dicta vero repellendus autem, sequi culpa repellat. Lorem
-          ipsum dolor sit amet consectetur, adipisicing elit. Accusantium iure
-          doloribus, hic, praesentium repudiandae sunt ipsum, dignissimos rem
-          deleniti enim dolorem! Unde asperiores dicta vero repellendus autem,
-          sequi culpa repellat.
-        </Text>
+        <Text style={styles.storyText}>The End</Text>
       </ScrollView>
       <View style={styles.buttonContainer}>
         <Button title="End" onPress={() => navigation.navigate("Root")} />
