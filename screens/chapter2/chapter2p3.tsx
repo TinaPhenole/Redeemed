@@ -9,19 +9,26 @@ type Props = RootStackScreenProps<"Chapter2p3">;
 export default function StoryPage({ navigation }: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Chapter 2</Text>
+      <Text style={styles.title}>Chapter 2, Part Three</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
         darkColor="rgba(255,255,255,0.1)"
       />
       <ScrollView>
-        <Text style={styles.storyText}>C.2 Part 3</Text>
-        <Text style={styles.storyText}>End of Chapter 2</Text>
-        <Button
-          title="Continue"
-          onPress={() => navigation.navigate("Chapter3p1")}
-        />
+        <Text style={styles.storyText}>
+          She is aware that she is leaving things to the last minute, and easily
+          gives up before she even tried. All and all, she listens too much to
+          what others thinks and says about her, and likes to paint scenarios in
+          her own head, which is much bigger and more complicated than the
+          reallity is. She is too proud to ask for help and insanely too easily
+          influenced by external factors. She has almost lost all effort to try.
+        </Text>
+        <Text style={styles.storyText}>
+          The moral of the story: Do not let others influence what you want to
+          do with your life. Because in the end, only you will live it.
+        </Text>
+        <Text style={styles.storyText}>The End .... for now.</Text>
       </ScrollView>
       <View style={styles.buttonContainer}>
         <Button
