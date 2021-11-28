@@ -4,7 +4,7 @@ import { Text, View } from "../components/Themed";
 import Button from "../components/Button";
 import { RootStackScreenProps } from "../types";
 
-type Props = RootStackScreenProps<"Modal">;
+type Props = RootStackScreenProps<"StoryPage">;
 
 export default function StoryPage({ navigation }: Props) {
   return (
@@ -17,15 +17,15 @@ export default function StoryPage({ navigation }: Props) {
       />
       <Button
         title="Chapter 1"
-        onPress={() => navigation.navigate("NotFound")}
+        onPress={() => navigation.navigate("Chapter1p1")}
       />
       <Button
         title="Chapter 2"
-        onPress={() => navigation.navigate("NotFound")}
+        onPress={() => navigation.navigate("Chapter2p1")}
       />
       <Button
         title="Chapter 3"
-        onPress={() => navigation.navigate("NotFound")}
+        onPress={() => navigation.navigate("Chapter3p1")}
       />
     </View>
   );
