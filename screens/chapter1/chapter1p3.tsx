@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Image } from "react-native";
 import { Text, View } from "../../components/Themed";
 import Button from "../../components/Button";
 import { RootStackScreenProps } from "../../types";
@@ -16,6 +16,10 @@ export default function StoryPage({ navigation }: Props) {
         darkColor="rgba(255,255,255,0.1)"
       />
       <ScrollView>
+        <Image
+          source={require("../../assets/chapterImages/8e9ace81436554eb7ce677ecfb97a220.jpg")}
+          style={styles.image}
+        />
         <Text style={styles.storyText}>
           The help disappeared, it got warmer outside, and summer crept around
           the corner. The woman was now behind in two courses, the HTML course,
@@ -71,6 +75,12 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     height: 1,
     width: "80%",
+  },
+  image: {
+    width: 300,
+    height: 300,
+    marginHorizontal: 30,
+    marginBottom: 10,
   },
   centerItems: {
     justifyContent: "center",

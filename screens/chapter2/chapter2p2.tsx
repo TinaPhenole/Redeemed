@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Image } from "react-native";
 import { Text, View } from "../../components/Themed";
 import Button from "../../components/Button";
 import { RootStackScreenProps } from "../../types";
@@ -26,6 +26,10 @@ export default function StoryPage({ navigation }: Props) {
           without the knowledge and motivation, everything felt like it was too
           much and overwhelming.
         </Text>
+        <Image
+          source={require("../../assets/chapterImages/depositphotos_220681692-stock-photo.jpg")}
+          style={styles.image}
+        />
         <Text style={styles.storyText}>
           She started putting more and more off, of things and assignments she
           wanted to hand in. Unconsciously sabotaged for herself. Did not
@@ -66,6 +70,12 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     height: 1,
     width: "80%",
+  },
+  image: {
+    width: 300,
+    height: 300,
+    marginHorizontal: 30,
+    marginBottom: 10,
   },
   centerItems: {
     justifyContent: "center",
