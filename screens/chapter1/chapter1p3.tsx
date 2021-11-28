@@ -9,7 +9,7 @@ type Props = RootStackScreenProps<"Chapter1p3">;
 export default function StoryPage({ navigation }: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Chapter 1, Part three</Text>
+      <Text style={styles.title}>Chapter 1, Part Three</Text>
       <View
         style={styles.separator}
         lightColor="#eee"

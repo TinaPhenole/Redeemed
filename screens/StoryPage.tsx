@@ -23,10 +23,6 @@ export default function StoryPage({ navigation }: Props) {
         title="Chapter 2"
         onPress={() => navigation.navigate("Chapter2p1")}
       />
-      <Button
-        title="Chapter 3"
-        onPress={() => navigation.navigate("Chapter3p1")}
-      />
     </View>
   );
 }
