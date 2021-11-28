@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Image } from "react-native";
 import { Text, View } from "../../components/Themed";
 import Button from "../../components/Button";
 import { RootStackScreenProps } from "../../types";
@@ -28,6 +28,10 @@ export default function StoryPage({ navigation }: Props) {
           The moral of the story: Do not let others influence what you want to
           do with your life. Because in the end, only you will live it.
         </Text>
+        <Image
+          source={require("../../assets/chapterImages/istockphoto-1021755694-612x612.jpg")}
+          style={styles.image}
+        />
         <Text style={styles.storyText}>The End .... for now.</Text>
       </ScrollView>
       <View style={styles.buttonContainer}>
@@ -56,6 +60,12 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     height: 1,
     width: "80%",
+  },
+  image: {
+    width: 300,
+    height: 300,
+    marginHorizontal: 30,
+    marginBottom: 10,
   },
   storyText: {
     marginHorizontal: 30,

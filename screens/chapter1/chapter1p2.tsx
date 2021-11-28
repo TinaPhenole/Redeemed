@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Image } from "react-native";
 import { Text, View } from "../../components/Themed";
 import Button from "../../components/Button";
 import { RootStackScreenProps } from "../../types";
@@ -30,6 +30,10 @@ export default function StoryPage({ navigation }: Props) {
           understood them new languages and followed along the material. She
           began to feel less stupid and useless.
         </Text>
+        <Image
+          source={require("../../assets/chapterImages/istockphoto-1254678283-170667a.jpg")}
+          style={styles.image}
+        />
         <Text style={styles.storyText}>
           So one day, after a particularly difficult lecture, it did not feel so
           great. She took a personal day and ignored that day's online lecture.
@@ -71,6 +75,12 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     height: 1,
     width: "80%",
+  },
+  image: {
+    width: 300,
+    height: 300,
+    marginHorizontal: 30,
+    marginBottom: 10,
   },
   centerItems: {
     justifyContent: "center",

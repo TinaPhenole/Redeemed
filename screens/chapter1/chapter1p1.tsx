@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Image } from "react-native";
 import { Text, View } from "../../components/Themed";
 import Button from "../../components/Button";
 import { RootStackScreenProps } from "../../types";
@@ -16,6 +16,10 @@ export default function StoryPage({ navigation }: Props) {
         darkColor="rgba(255,255,255,0.1)"
       />
       <ScrollView>
+        <Image
+          source={require("../../assets/chapterImages/depositphotos_316482244-stock-photo.jpg")}
+          style={styles.image}
+        />
         <Text style={styles.storyText}>
           A woman lived in an apartment, just outside Borås. She had everything
           she could wish for. A wonderful boyfriend, a steady point in life, two
@@ -70,6 +74,12 @@ const styles = StyleSheet.create({
     height: 1,
     width: "80%",
   },
+  image: {
+    width: 300,
+    height: 300,
+    marginHorizontal: 30,
+    marginBottom: 10,
+  },
   centerItems: {
     justifyContent: "center",
     alignItems: "center",
@@ -80,7 +90,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: "auto",
     letterSpacing: 0.8,
-    fontFamily: "open-sans-condensed-light",
   },
   buttonContainer: {
     marginVertical: 10,
